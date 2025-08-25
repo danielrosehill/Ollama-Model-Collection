@@ -49,5 +49,4 @@ Hardware snapshots document:
 - **Primary Model**: Llama 3.1 8B Instruct (daily driver)
 - **Hardware**: Intel i7-12700F + AMD RX 7700 XT + 64GB RAM
 
----
-*Maintained by Daniel Rosehill - [danielrosehill.com](https://danielrosehill.com)*
+ 

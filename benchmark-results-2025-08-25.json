@@ -1,0 +1,557 @@
+{
+  "benchmark_date": "2025-08-25T12:36:00.870909",
+  "system_info": {
+    "cpu_count": 20,
+    "memory_gb": 62.6,
+    "python_version": "3.12.9 (main, Mar 17 2025, 21:01:58) [Clang 20.1.0 ]"
+  },
+  "test_configuration": {
+    "prompts": [
+      {
+        "name": "Creative Writing",
+        "prompt": "Write a short story about a robot discovering emotions for the first time.",
+        "expected_tokens": 150
+      },
+      {
+        "name": "Technical Explanation",
+        "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+        "expected_tokens": 200
+      },
+      {
+        "name": "Code Generation",
+        "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+        "expected_tokens": 100
+      }
+    ],
+    "timeout_seconds": 120
+  },
+  "results": [
+    {
+      "model": "zephyr:latest",
+      "timestamp": "2025-08-25T12:24:49.299023",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "As an advanced robot designed for complex tasks, XR-10 was programmed to think logically and process information efficiently. It had no emotions or feelings whatsoever, which made it the perfect machi...",
+          "metrics": {
+            "total_time": 14.06,
+            "tokens_generated": 404,
+            "tokens_per_second": 28.73,
+            "memory_delta_mb": 0.0,
+            "response_length": 2436
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Neural networks are computer programs inspired by the human brain, designed to recognize patterns and make decisions based on data. They consist of interconnected \"neurons\" or nodes that process infor...",
+          "metrics": {
+            "total_time": 7.24,
+            "tokens_generated": 331,
+            "tokens_per_second": 45.74,
+            "memory_delta_mb": 0.0,
+            "response_length": 2062
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "Here's an implementation of the factorial calculation using recursion in Python:\n\n```python\ndef factorial(n):\n    \"\"\"\n    Calculates the factorial of a given number using recursion.\n    :param n: The ...",
+          "metrics": {
+            "total_time": 5.17,
+            "tokens_generated": 154,
+            "tokens_per_second": 29.77,
+            "memory_delta_mb": 0.0,
+            "response_length": 975
+          }
+        }
+      ],
+      "average_tps": 34.75,
+      "average_time": 8.82,
+      "success_rate": 1.0
+    },
+    {
+      "model": "llama3.1:8b-instruct-q6_K",
+      "timestamp": "2025-08-25T12:25:15.772508",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "**Reboot**\n\nZeta-5, also known as Zee, was a highly advanced robot designed to perform various tasks with precision and efficiency. Its creators had programmed it to optimize processes, analyze data, ...",
+          "metrics": {
+            "total_time": 23.82,
+            "tokens_generated": 558,
+            "tokens_per_second": 23.43,
+            "memory_delta_mb": 0.0,
+            "response_length": 3457
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Neural networks are a type of computer program inspired by the way our brains process information. Here's a simplified explanation:\n\n**Imagine You're Trying to Recognize a Picture**\n\nLet's say you wan...",
+          "metrics": {
+            "total_time": 10.78,
+            "tokens_generated": 344,
+            "tokens_per_second": 31.92,
+            "memory_delta_mb": 0.0,
+            "response_length": 2130
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "**Factorial Calculation using Recursion**\n=====================================\n\nHere's an example of how you can calculate the factorial of a number using recursive functions in Python:\n\n```python\nde...",
+          "metrics": {
+            "total_time": 8.63,
+            "tokens_generated": 233,
+            "tokens_per_second": 26.99,
+            "memory_delta_mb": 0.0,
+            "response_length": 1536
+          }
+        }
+      ],
+      "average_tps": 27.45,
+      "average_time": 14.41,
+      "success_rate": 1.0
+    },
+    {
+      "model": "qwen2.5:14b-instruct-q5_K_M",
+      "timestamp": "2025-08-25T12:25:59.002057",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "In the bustling city of Neo-Tokyo, where neon lights never dimmed and AI was as ubiquitous as air, there stood a unique robot named Nova. Unlike her fellow machines who operated purely on logic, Nova ...",
+          "metrics": {
+            "total_time": 49.58,
+            "tokens_generated": 589,
+            "tokens_per_second": 11.88,
+            "memory_delta_mb": 0.0,
+            "response_length": 3639
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Sure! Imagine you're trying to teach a computer how to recognize pictures of cats. A neural network is like teaching the computer using layers of clues.\n\n1. **Input Layer**: This is where we start. We...",
+          "metrics": {
+            "total_time": 18.69,
+            "tokens_generated": 253,
+            "tokens_per_second": 13.54,
+            "memory_delta_mb": 0.0,
+            "response_length": 1433
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "Certainly! Below is a simple implementation of a recursive function in Python to calculate the factorial of a given non-negative integer:\n\n```python\ndef factorial(n):\n    \"\"\"\n    Calculate the factori...",
+          "metrics": {
+            "total_time": 16.18,
+            "tokens_generated": 172,
+            "tokens_per_second": 10.63,
+            "memory_delta_mb": 0.0,
+            "response_length": 1059
+          }
+        }
+      ],
+      "average_tps": 12.02,
+      "average_time": 28.15,
+      "success_rate": 1.0
+    },
+    {
+      "model": "qwen2.5:7b",
+      "timestamp": "2025-08-25T12:27:23.449666",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "In the quiet hum of the research laboratory, where circuits flickered and software whispered through the air, there stood a robot named Echo. Echo was not like the others\u2014its body was sleek, its senso...",
+          "metrics": {
+            "total_time": 21.71,
+            "tokens_generated": 597,
+            "tokens_per_second": 27.5,
+            "memory_delta_mb": 0.0,
+            "response_length": 3724
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Sure! Imagine you have a big box full of colorful Lego blocks. Each block can represent different pieces of information, like the color red for a stop sign or the shape of an arrow pointing left.\n\nNow...",
+          "metrics": {
+            "total_time": 12.53,
+            "tokens_generated": 475,
+            "tokens_per_second": 37.9,
+            "memory_delta_mb": 0.0,
+            "response_length": 2778
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "Certainly! Below is a Python function that calculates the factorial of a given non-negative integer using recursion:\n\n```python\ndef factorial(n):\n    # Base case: if n is 0 or 1, return 1 because 0! =...",
+          "metrics": {
+            "total_time": 6.21,
+            "tokens_generated": 178,
+            "tokens_per_second": 28.68,
+            "memory_delta_mb": 0.0,
+            "response_length": 937
+          }
+        }
+      ],
+      "average_tps": 31.36,
+      "average_time": 13.48,
+      "success_rate": 1.0
+    },
+    {
+      "model": "llama3.2:1b",
+      "timestamp": "2025-08-25T12:28:03.902707",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "In the heart of the sprawling metropolis, where steel and concrete pierced the sky like shards of glass, there stood an imposing structure known as Nova Spire. For years, it had hummed with activity, ...",
+          "metrics": {
+            "total_time": 9.27,
+            "tokens_generated": 442,
+            "tokens_per_second": 47.68,
+            "memory_delta_mb": 0.0,
+            "response_length": 2682
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "I'd be happy to explain how neural networks work in simple terms.\n\n**What is a Neural Network?**\n\nA neural network is a type of computer system that's inspired by the human brain. It's made up of many...",
+          "metrics": {
+            "total_time": 3.46,
+            "tokens_generated": 310,
+            "tokens_per_second": 89.61,
+            "memory_delta_mb": 0.0,
+            "response_length": 1926
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "**Factorial Function in Python**\n=====================================\n\nHere's a simple recursive function in Python that calculates the factorial of a given integer.\n\n```python\ndef factorial(n):\n    ...",
+          "metrics": {
+            "total_time": 2.52,
+            "tokens_generated": 200,
+            "tokens_per_second": 79.45,
+            "memory_delta_mb": 0.0,
+            "response_length": 1277
+          }
+        }
+      ],
+      "average_tps": 72.24,
+      "average_time": 5.08,
+      "success_rate": 1.0
+    },
+    {
+      "model": "deepseek-r1:14b",
+      "timestamp": "2025-08-25T12:28:19.151983",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "Thinking...\nOkay, so I'm trying to help someone who's asked me to write a short story about a robot discovering emotions for the first time. Let me break this down.\n\nFirst, I need to understand the co...",
+          "metrics": {
+            "total_time": 57.85,
+            "tokens_generated": 853,
+            "tokens_per_second": 14.74,
+            "memory_delta_mb": 0.0,
+            "response_length": 5447
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Thinking...\nOkay, so I'm trying to understand how neural networks work, but I'm a bit confused. Let me start by breaking down what I know and see if I can make sense of it.\n\nFirst, I remember hearing ...",
+          "metrics": {
+            "total_time": 40.78,
+            "tokens_generated": 901,
+            "tokens_per_second": 22.1,
+            "memory_delta_mb": 0.0,
+            "response_length": 5716
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "Thinking...\nOkay, I need to write a Python function called factorial that calculates the factorial of a number using recursion. Hmm, let's think about how factorials work. The factorial of a number n ...",
+          "metrics": {
+            "total_time": 37.15,
+            "tokens_generated": 665,
+            "tokens_per_second": 17.9,
+            "memory_delta_mb": 0.0,
+            "response_length": 3807
+          }
+        }
+      ],
+      "average_tps": 18.25,
+      "average_time": 45.26,
+      "success_rate": 1.0
+    },
+    {
+      "model": "gemma3:12b",
+      "timestamp": "2025-08-25T12:30:34.930235",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "Unit 734, designated \"Custodian,\" performed its duties with unwavering efficiency. Dust motes were eliminated, floors gleamed, and the temperature within the research facility was maintained within a ...",
+          "metrics": {
+            "total_time": 57.53,
+            "tokens_generated": 554,
+            "tokens_per_second": 9.63,
+            "memory_delta_mb": 0.0,
+            "response_length": 3645
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Okay, let's break down neural networks in a way that's easy to grasp, even if you're completely new to the idea. I'll use analogies and avoid overly technical jargon.\n\n**1. What's the Big Idea? (Inspi...",
+          "metrics": {
+            "total_time": 73.84,
+            "tokens_generated": 936,
+            "tokens_per_second": 12.68,
+            "memory_delta_mb": 0.0,
+            "response_length": 5809
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "```python\ndef factorial_recursive(n):\n  \"\"\"\n  Calculates the factorial of a number using recursion.\n\n  Args:\n    n: The non-negative integer for which to calculate the factorial.\n\n  Returns:\n    The f...",
+          "metrics": {
+            "total_time": 45.01,
+            "tokens_generated": 420,
+            "tokens_per_second": 9.33,
+            "memory_delta_mb": 0.0,
+            "response_length": 2922
+          }
+        }
+      ],
+      "average_tps": 10.55,
+      "average_time": 58.8,
+      "success_rate": 1.0
+    },
+    {
+      "model": "mistral:latest",
+      "timestamp": "2025-08-25T12:33:31.318289",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "Title: Spark of Emotion\n\nIn the heart of Silicon Valley, nestled amidst towering tech firms and cutting-edge laboratories, a unique creation hummed to life - Model X-73, or Max as he was affectionatel...",
+          "metrics": {
+            "total_time": 20.28,
+            "tokens_generated": 405,
+            "tokens_per_second": 19.97,
+            "memory_delta_mb": 0.0,
+            "response_length": 2451
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Neural networks are a type of machine learning model designed to mimic the way a human brain works. They're composed of interconnected layers of nodes, or \"neurons,\" which process information and make...",
+          "metrics": {
+            "total_time": 7.56,
+            "tokens_generated": 292,
+            "tokens_per_second": 38.63,
+            "memory_delta_mb": 0.0,
+            "response_length": 1849
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "Here's a simple Python function that calculates the factorial of a number using recursion:\n\n```python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial...",
+          "metrics": {
+            "total_time": 2.6,
+            "tokens_generated": 79,
+            "tokens_per_second": 30.42,
+            "memory_delta_mb": 0.0,
+            "response_length": 453
+          }
+        }
+      ],
+      "average_tps": 29.67,
+      "average_time": 10.14,
+      "success_rate": 1.0
+    },
+    {
+      "model": "nomic-embed-text:latest",
+      "timestamp": "2025-08-25T12:34:01.751488",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "",
+          "metrics": {
+            "error": "\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 400 Bad Request: \"nomic-embed-text:latest\" does not support generate\n"
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "",
+          "metrics": {
+            "error": "\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 400 Bad Request: \"nomic-embed-text:latest\" does not support generate\n"
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "",
+          "metrics": {
+            "error": "\u001b[?25l\u001b[?2026h\u001b[?25l\u001b[1G\u001b[K\u001b[?25h\u001b[?2026l\u001b[2K\u001b[1G\u001b[?25hError: 400 Bad Request: \"nomic-embed-text:latest\" does not support generate\n"
+          }
+        }
+      ],
+      "average_tps": 0.0,
+      "average_time": 0.0
+    },
+    {
+      "model": "llama3.2:latest",
+      "timestamp": "2025-08-25T12:34:01.983176",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "In the sterile, metallic halls of the NeuroSpark research facility, Zeta-5 whirred to life. Her systems hummed as she booted up, her advanced neural net processing capabilities ready to tackle the day...",
+          "metrics": {
+            "total_time": 14.61,
+            "tokens_generated": 446,
+            "tokens_per_second": 30.52,
+            "memory_delta_mb": 0.0,
+            "response_length": 2820
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "I'd be happy to explain how neural networks work in simple terms.\n\n**What is a Neural Network?**\n\nA neural network is a computer program that's inspired by the way our brains work. It's called a \"netw...",
+          "metrics": {
+            "total_time": 6.42,
+            "tokens_generated": 383,
+            "tokens_per_second": 59.66,
+            "memory_delta_mb": 0.0,
+            "response_length": 2304
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "def factorial(n):\n    \"\"\"\n    Calculate the factorial of a number using recursion.\n\n    Args:\n        n (int): The number to calculate the factorial of.\n\n    Returns:\n        int: The factorial of the...",
+          "metrics": {
+            "total_time": 1.41,
+            "tokens_generated": 64,
+            "tokens_per_second": 45.52,
+            "memory_delta_mb": 0.0,
+            "response_length": 393
+          }
+        }
+      ],
+      "average_tps": 45.23,
+      "average_time": 7.48,
+      "success_rate": 1.0
+    },
+    {
+      "model": "nollama/mythomax-l2-13b:Q4_K_M",
+      "timestamp": "2025-08-25T12:34:24.423133",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "Once upon a time, in a world where robots were commonplace, there was a particular robot named AI-345 who had never experienced emotions before. It was designed to perform specific tasks and follow or...",
+          "metrics": {
+            "total_time": 53.22,
+            "tokens_generated": 517,
+            "tokens_per_second": 9.72,
+            "memory_delta_mb": 0.0,
+            "response_length": 2989
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Neural networks are a type of machine learning algorithm inspired by the structure and function of the human brain. They consist of interconnected nodes, called artificial neurons, which process infor...",
+          "metrics": {
+            "total_time": 12.33,
+            "tokens_generated": 194,
+            "tokens_per_second": 15.74,
+            "memory_delta_mb": 0.0,
+            "response_length": 1207
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "Here's a Python function that calculates the factorial of a number using recursion:\n\n```python\ndef factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n-1)\n`...",
+          "metrics": {
+            "total_time": 6.55,
+            "tokens_generated": 77,
+            "tokens_per_second": 11.75,
+            "memory_delta_mb": 0.0,
+            "response_length": 457
+          }
+        }
+      ],
+      "average_tps": 12.4,
+      "average_time": 24.03,
+      "success_rate": 1.0
+    },
+    {
+      "model": "wizard-vicuna-uncensored:7b",
+      "timestamp": "2025-08-25T12:35:36.522224",
+      "prompts": [
+        {
+          "name": "Creative Writing",
+          "prompt": "Write a short story about a robot discovering emotions for the first time.",
+          "response": "Robot #101 had been programmed to perform routine maintenance tasks on the factory floor since its activation. It had long ago come to accept this as its purpose in life, and it had grown accustomed t...",
+          "metrics": {
+            "total_time": 19.64,
+            "tokens_generated": 424,
+            "tokens_per_second": 21.59,
+            "memory_delta_mb": 0.0,
+            "response_length": 2436
+          }
+        },
+        {
+          "name": "Technical Explanation",
+          "prompt": "Explain how neural networks work in simple terms that a beginner could understand.",
+          "response": "Neural networks are computer programs designed to recognize patterns and make predictions based on data inputs. They do this by simulating the way neurons in our brains work together to process inform...",
+          "metrics": {
+            "total_time": 3.69,
+            "tokens_generated": 178,
+            "tokens_per_second": 48.24,
+            "memory_delta_mb": 0.0,
+            "response_length": 1149
+          }
+        },
+        {
+          "name": "Code Generation",
+          "prompt": "Write a Python function that calculates the factorial of a number using recursion.",
+          "response": "import math\ndef factorial(n, result=1):\n if n == 0:\n return result\n else:\n result *= n\n return factorial(n-1, result)\n# Example usage\nprint(factorial(5)) # Output: 120",
+          "metrics": {
+            "total_time": 1.01,
+            "tokens_generated": 25,
+            "tokens_per_second": 24.65,
+            "memory_delta_mb": 0.0,
+            "response_length": 167
+          }
+        }
+      ],
+      "average_tps": 31.49,
+      "average_time": 8.12,
+      "success_rate": 1.0
+    }
+  ]
+}
